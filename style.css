@@ -1,0 +1,110 @@
+/* how to change color behind the heading? */
+
+/* border 0px ? why needed */
+/* bcz this removes the button showing and makes them like written on page */
+* {
+	border: 0px solid red;
+} 
+
+body {
+	/* complete black looks bad */
+	background-color: #232323;
+	/*background-color: #000000;*/
+	font-family: "Raleway", Sans-serif;
+	font-size: 60%; /*1 em = 10px */
+	margin: 0;
+}
+
+/* container is the div containing the circles */
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+/* 30% keeps it circular */
+.square {
+	width: 30%;
+	background-color: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	transition: background .5s;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	o-transition: background .5s;
+} 
+
+.square:hover{
+    transform:scale(1.05)
+}
+
+h1 {
+	background: #091921;
+	color: #ffffff;
+	font-size: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 7px 0;
+}
+
+#color-display {
+	display: block;
+	font-size: 2em;
+}
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+#message {
+	text-transform: uppercase;
+	color: #2c5899;
+	font-size: 1.5em;
+	display: inline-block;
+	width: 20%;
+}
+
+button {
+	outline: none;
+	color: #2C8E99;
+	font-family: "Raleway", Sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: white;
+	height: 100%;
+	letter-spacing: 1px;
+    /* animation, all 4 are same things, just for different browsers */
+	transition: all 0.3s;
+	/* for chrome */
+	-webkit-transition: all 0.3s;
+	/* for mozilla browser */
+	-moz-transition: all 0.3s;
+	/* for opera browser */
+	o-transition: all 0.3s;
+}
+
+/* button is not class, just the type button */
+button:hover {
+	background-color: #2C8E99;
+	color: white;
+}
+
+.selected {
+	background-color: #232323;
+	color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.square {
+	/* to make it circular */
+	border-radius: 50%;
+}
+
+
+
+

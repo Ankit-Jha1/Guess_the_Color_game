@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<title>Guess Color Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+	<!-- bootstrap :- -->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- span element is inline container used to style part of text -->
+	<h1 class="heading">
+		The Great Guessing Game<span id="color-display">RGB</span>
+	</h1>
+	<div id="stripe">
+		<!-- reset new colors -->
+		<button id="reset">New Colors</button>
+		<!-- span for winning or lost message -->
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<!-- mode and selected 2 classes, by default this is selected -->
+		<button class="mode selected">Hard</button>
+	</div>
+	<div id="container">
+		<!-- 6 empty divs -->
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
